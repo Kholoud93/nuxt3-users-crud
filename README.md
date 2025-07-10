@@ -1,36 +1,38 @@
+# 👥 Nuxt 3 Mini Users CRUD App
 
-# 👥 Nuxt 3 Users CRUD
-
-A simple user management module built with **Nuxt 3**, **TypeScript**, and **Pinia**.  
-Includes authentication, a reusable DataTable, and basic in-memory CRUD features.
+This is a small CRUD module built using **Nuxt 3**, **TypeScript**, **Pinia**, and **Tailwind CSS**.  
+It demonstrates authentication, routing, middleware, state management, and reusable components.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Fake login system (with hardcoded admin)
-- 🧠 Pinia-based state management
-- 🔐 Protected routes via Nuxt middleware
-- 📋 Reusable DataTable with pagination and search
-- ✨ TypeScript + Composition API
-- 🎨 Tailwind CSS styling
+- 🔐 **Fake Login System** with hardcoded user (admin@example.com / password)
+- 👥 **Users Management**
+  - View users in a paginated & searchable table
+  - Add, Edit, and Delete users
+- 🧩 **Reusable Components**
+  - `<UserForm />` for both Create & Edit
+  - `<DataTable />` to render dynamic tables
+- 🧠 **State Management**
+  - Users and Auth state handled using Pinia
+- 🔐 **Route Protection**
+  - `/users` is protected using middleware
+- 💅 **Tailwind CSS** for fast and clean UI
 
 ---
 
-## 🛠️ Technologies
-
-- Nuxt 3
-- TypeScript
-- Pinia
-- Tailwind CSS
-
----
-
-## 📦 Setup
+## 🛠️ Setup Instructions
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nuxt3-users-crud.git
+# 1. Clone the repo
+git clone https://github.com/kholoud93/nuxt3-users-crud.git
 cd nuxt3-users-crud
+
+# 2. Install dependencies
 npm install
+
+# 3. Run the dev server
 npm run dev
-# nuxt3-users-crud
+
+
